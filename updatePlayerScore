@@ -1,0 +1,97 @@
+import json
+import datetime 
+import boto3
+import decimal
+from boto3.dynamodb.conditions import Key, Attr
+
+dynamodb = boto3.resource('dynamodb')
+
+def lambda_handler(event, context):
+    table = dynamodb.Table('a3-players')
+    print(event)
+    params = event['queryStringParameters']
+    print(params)
+    playerid = params['playerID']
+    if not verify_player(playerid):
+        return {
+    'statusCode': 200,
+    'body': json.dumps('This player does not exist')
+      }
+    if 'won' in params:
+        update_score_win(playerid)
+        return {
+    'statusCode': 200,
+    'body': json.dumps('Yay')
+}
+    if 'lost' in params:
+        update_score_lose(playerid)
+        return {
+    'statusCode': 200,
+    'body': json.dumps('Boo')
+}
+   
+    return {
+'statusCode': 200,
+'body': json.dumps('HellLambda!')
+}
+
+#Check that a player with this ID exists
+
+def verify_player(playerID):
+    user = dynamodb.Table('a3-players')
+    resp_user = user.get_item(Key={'playerID':playerID})
+    return 'Item' in resp_user
+    
+    
+def update_score_lose(playerID):
+    user = dynamodb.Table('a3-players')
+    resp_user = user.get_item(Key={'playerID':playerID})
+    item = resp_user['Item']
+    totalGames = item['totalGames']
+    gamesLost = item['gamesLost']
+    gamesWon = item['gamesWon']
+    winPercentage = item['winPercentage']
+    
+    totalGames += 1
+    gamesLost += 1
+    winPercentage = int((gamesWon / totalGames) * 100)
+    print(totalGames)
+    print(gamesLost)
+    print(winPercentage)
+    user.put_item(
+   Item={
+        'playerID': playerID,
+        'totalGames': totalGames,
+        'gamesWon' : gamesWon,
+        'gamesLost': gamesLost,
+        'winPercentage' : winPercentage
+    }
+)
+    return 'Item' in resp_user
+
+
+def update_score_win(playerID):
+    user = dynamodb.Table('a3-players')
+    resp_user = user.get_item(Key={'playerID':playerID})
+    item = resp_user['Item']
+    totalGames = item['totalGames']
+    gamesLost = item['gamesLost']
+    gamesWon = item['gamesWon']
+    winPercentage = item['winPercentage']
+    
+    totalGames += 1
+    gamesWon += 1
+    winPercentage = int((gamesWon / totalGames) * 100)
+    print(totalGames)
+    print(gamesLost)
+    print(winPercentage)
+    user.put_item(
+   Item={
+        'playerID': playerID,
+        'totalGames': totalGames,
+        'gamesWon' : gamesWon,
+        'gamesLost': gamesLost,
+        'winPercentage' : winPercentage
+    }
+)
+    return 'Item' in resp_user
