@@ -1,0 +1,33 @@
+INFO:root:Game ID: 0 requested at 04.Nov 2020 22:25:36
+INFO:root:Following player connected at 04.Nov 2020 22:25:36
+INFO:root:{'totalGames': 13.0, 'gamesLost': 5.0, 'gamesWon': 8.0, 'playerID': '011', 'winPercentage': 61.0}
+INFO:root:Following player connected at 04.Nov 2020 22:25:36
+INFO:root:{'totalGames': 11.0, 'gamesLost': 4.0, 'gamesWon': 7.0, 'playerID': '005', 'winPercentage': 63.0}
+INFO:root:Following player connected at 04.Nov 2020 22:25:36
+INFO:root:{'totalGames': 16.0, 'gamesLost': 6.0, 'gamesWon': 10.0, 'playerID': '007', 'winPercentage': 62.0}
+INFO:root:Player 005 won.
+INFO:root:Updated wins and losses{'totalGames': 12.0, 'gamesLost': 4.0, 'gamesWon': 8.0, 'playerID': '005', 'winPercentage': 66.0}
+INFO:root:Updated wins and losses{'totalGames': 14.0, 'gamesLost': 6.0, 'gamesWon': 8.0, 'playerID': '011', 'winPercentage': 57.0}
+INFO:root:Updated wins and losses{'totalGames': 17.0, 'gamesLost': 7.0, 'gamesWon': 10.0, 'playerID': '007', 'winPercentage': 58.0}
+INFO:root:Game ID: 1 requested at 04.Nov 2020 22:25:37
+INFO:root:Following player connected at 04.Nov 2020 22:25:37
+INFO:root:{'totalGames': 0.0, 'gamesLost': 0.0, 'gamesWon': 0.0, 'playerID': '001', 'winPercentage': 50.0}
+INFO:root:Following player connected at 04.Nov 2020 22:25:37
+INFO:root:{'totalGames': 1.0, 'gamesLost': 0.0, 'gamesWon': 1.0, 'playerID': '002', 'winPercentage': 50.0}
+INFO:root:Following player connected at 04.Nov 2020 22:25:37
+INFO:root:{'totalGames': 10.0, 'gamesLost': 5.0, 'gamesWon': 5.0, 'playerID': '006', 'winPercentage': 50.0}
+INFO:root:Player 001 won.
+INFO:root:Updated wins and losses{'totalGames': 1.0, 'gamesLost': 0.0, 'gamesWon': 1.0, 'playerID': '001', 'winPercentage': 100.0}
+INFO:root:Updated wins and losses{'totalGames': 2.0, 'gamesLost': 1.0, 'gamesWon': 1.0, 'playerID': '002', 'winPercentage': 50.0}
+INFO:root:Updated wins and losses{'totalGames': 11.0, 'gamesLost': 6.0, 'gamesWon': 5.0, 'playerID': '006', 'winPercentage': 45.0}
+INFO:root:Game ID: 2 requested at 04.Nov 2020 22:25:38
+INFO:root:Following player connected at 04.Nov 2020 22:25:38
+INFO:root:{'totalGames': 11.0, 'gamesLost': 6.0, 'gamesWon': 5.0, 'playerID': '006', 'winPercentage': 45.0}
+INFO:root:Following player connected at 04.Nov 2020 22:25:38
+INFO:root:{'totalGames': 19.0, 'gamesLost': 10.0, 'gamesWon': 9.0, 'playerID': '010', 'winPercentage': 47.0}
+INFO:root:Following player connected at 04.Nov 2020 22:25:38
+INFO:root:{'totalGames': 15.0, 'gamesLost': 9.0, 'gamesWon': 6.0, 'playerID': '004', 'winPercentage': 40.0}
+INFO:root:Player 006 won.
+INFO:root:Updated wins and losses{'totalGames': 12.0, 'gamesLost': 6.0, 'gamesWon': 6.0, 'playerID': '006', 'winPercentage': 50.0}
+INFO:root:Updated wins and losses{'totalGames': 20.0, 'gamesLost': 11.0, 'gamesWon': 9.0, 'playerID': '010', 'winPercentage': 45.0}
+INFO:root:Updated wins and losses{'totalGames': 16.0, 'gamesLost': 10.0, 'gamesWon': 6.0, 'playerID': '004', 'winPercentage': 37.0}
