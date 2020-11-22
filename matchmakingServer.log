@@ -1,0 +1,6 @@
+INFO:root:Following player connected at 22.Nov 2020 21:27:02
+INFO:root:{'totalGames': 2.0, 'gamesLost': 1.0, 'gamesWon': 1.0, 'playerID': '001', 'winPercentage': 50.0}
+INFO:root:Following player connected at 22.Nov 2020 21:27:02
+INFO:root:{'totalGames': 15.0, 'gamesLost': 7.0, 'gamesWon': 8.0, 'playerID': '011', 'winPercentage': 53.0}
+INFO:root:Following player connected at 22.Nov 2020 21:27:02
+INFO:root:{'totalGames': 6.0, 'gamesLost': 3.0, 'gamesWon': 3.0, 'playerID': '003', 'winPercentage': 50.0}
