@@ -9,19 +9,20 @@ from _thread import *
 import threading
 from operator import itemgetter
 import logging
+import pickle
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 logging.basicConfig(filename='matchmakingServer.log', level=logging.INFO)
 
 
-def makeRoomOfThree():
+def makeRoomOfThree(sock):
     while True:
         sock.listen()
         conn, addr = sock.accept()
 
         with conn:
             IDofPlayerRequestingMatch = conn.recv(1024)
-            IDofPlayerRequestingMatch = json.loads(IDofPlayerRequestingMatch)
+            IDofPlayerRequestingMatch = pickle.loads(IDofPlayerRequestingMatch)
             if IDofPlayerRequestingMatch != "":
                 # Get the player database
                 response = requests.get(
@@ -86,7 +87,7 @@ def makeRoomOfThree():
                     logging.info(player)
 
                 # Return the final list
-                response = json.dumps(finalSortedPlayers)
+                response = pickle.dumps(finalSortedPlayers)
                 conn.sendall(response)
 
 
