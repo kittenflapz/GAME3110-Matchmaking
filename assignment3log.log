@@ -31,13 +31,24 @@ INFO:root:Player 006 won.
 INFO:root:Updated wins and losses{'totalGames': 12.0, 'gamesLost': 6.0, 'gamesWon': 6.0, 'playerID': '006', 'winPercentage': 50.0}
 INFO:root:Updated wins and losses{'totalGames': 20.0, 'gamesLost': 11.0, 'gamesWon': 9.0, 'playerID': '010', 'winPercentage': 45.0}
 INFO:root:Updated wins and losses{'totalGames': 16.0, 'gamesLost': 10.0, 'gamesWon': 6.0, 'playerID': '004', 'winPercentage': 37.0}
-INFO:root:Game ID: 0 requested at 22.Nov 2020 16:21:25
-INFO:root:Game ID: 0 requested at 22.Nov 2020 16:22:24
-INFO:root:Game ID: 0 requested at 22.Nov 2020 16:22:56
-INFO:root:Game ID: 0 requested at 22.Nov 2020 16:24:24
-INFO:root:Game ID: 0 requested at 22.Nov 2020 16:25:16
 INFO:root:Game ID: 0 requested at 22.Nov 2020 16:27:00
 INFO:root:Player 011 won.
 INFO:root:Updated wins and losses{'totalGames': 16.0, 'gamesLost': 7.0, 'gamesWon': 9.0, 'playerID': '011', 'winPercentage': 56.0}
 INFO:root:Updated wins and losses{'totalGames': 3.0, 'gamesLost': 2.0, 'gamesWon': 1.0, 'playerID': '001', 'winPercentage': 33.0}
 INFO:root:Updated wins and losses{'totalGames': 7.0, 'gamesLost': 4.0, 'gamesWon': 3.0, 'playerID': '003', 'winPercentage': 42.0}
+INFO:root:Game ID: 0 requested at 22.Nov 2020 16:36:14
+INFO:root:Game ID: 0 requested at 22.Nov 2020 16:36:55
+INFO:root:Player 005 won.
+INFO:root:Updated wins and losses{'totalGames': 13.0, 'gamesLost': 4.0, 'gamesWon': 9.0, 'playerID': '005', 'winPercentage': 69.0}
+INFO:root:Updated wins and losses{'totalGames': 4.0, 'gamesLost': 2.0, 'gamesWon': 2.0, 'playerID': '002', 'winPercentage': 50.0}
+INFO:root:Updated wins and losses{'totalGames': 36.0, 'gamesLost': 12.0, 'gamesWon': 24.0, 'playerID': '009', 'winPercentage': 66.0}
+INFO:root:Game ID: 0 requested at 22.Nov 2020 16:37:14
+INFO:root:Player 005 won.
+INFO:root:Updated wins and losses{'totalGames': 14.0, 'gamesLost': 4.0, 'gamesWon': 10.0, 'playerID': '005', 'winPercentage': 71.0}
+INFO:root:Updated wins and losses{'totalGames': 37.0, 'gamesLost': 13.0, 'gamesWon': 24.0, 'playerID': '009', 'winPercentage': 64.0}
+INFO:root:Updated wins and losses{'totalGames': 19.0, 'gamesLost': 8.0, 'gamesWon': 11.0, 'playerID': '007', 'winPercentage': 57.0}
+INFO:root:Game ID: 0 requested at 22.Nov 2020 16:37:35
+INFO:root:Player 004 won.
+INFO:root:Updated wins and losses{'totalGames': 17.0, 'gamesLost': 10.0, 'gamesWon': 7.0, 'playerID': '004', 'winPercentage': 41.0}
+INFO:root:Updated wins and losses{'totalGames': 4.0, 'gamesLost': 3.0, 'gamesWon': 1.0, 'playerID': '001', 'winPercentage': 25.0}
+INFO:root:Updated wins and losses{'totalGames': 8.0, 'gamesLost': 5.0, 'gamesWon': 3.0, 'playerID': '003', 'winPercentage': 37.0}
